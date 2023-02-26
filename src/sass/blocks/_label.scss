@@ -1,0 +1,19 @@
+.label {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9C9C9C;
+    padding: 11px 18px;
+    border: 1px solid rgba(129, 129, 139, 0.2);
+    border-radius: 12px;
+    transition: border .5s ease 0s;
+    &:not(:last-child) {
+        margin-bottom: 19px;
+    }
+    &:hover {
+        color: #9C9C9C;
+        border: 1px solid rgba(129, 129, 139, 0.5);
+    }
+}

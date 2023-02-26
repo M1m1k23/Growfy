@@ -1,0 +1,87 @@
+.testimonials {
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &-content {
+        margin-bottom: 64px;
+        &__title {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+        &__body {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        &__text {
+            max-width: 680px;
+        }
+        &__actions {
+            display: flex;
+        }
+        &__actions {
+            align-self: flex-end;
+            flex: 0 0 auto;
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+    &-item {
+        padding: 64px 40px;
+        background: rgba(129, 129, 139, 0.1);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        &__user {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        &__avatar {
+            flex: 0 0 68px;
+            overflow: hidden;
+            &_1 {
+                border-radius: 0 50% 50% 50%;
+            }
+            &_2 {
+                border-radius: 50% 0 50% 50%;
+            }
+            &_3 {
+                border-radius: 50% 50% 0 50%;
+            }
+            img {
+                max-width: 100%;
+                transform: scale(1.02);
+            }
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #FFFFFF;
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+        &__company {
+            font-size: 14px;
+            line-height: 1.57;
+        }
+        &__title {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 1.4;
+            color: #FFFFFF;
+        }
+        &__text {
+            flex: 1 1 auto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+
+}

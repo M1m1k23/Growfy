@@ -1,0 +1,28 @@
+.clients {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    &__title {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.57;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 44px;
+    }
+    &-items {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__item {
+            img {
+                max-width: 100%;
+                transition: all 0.3s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
